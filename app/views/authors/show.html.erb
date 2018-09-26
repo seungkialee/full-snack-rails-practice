@@ -1,0 +1,3 @@
+<h1><%= @author.name %> (b. <%= @author.birth_year %>)</h1>
+<%= link_to "Edit #{@author.name}", edit_author_path(@author) %>
+<%= button_to "Delete #{@author.name}", "/authors/#{@author.id}", {:method => :delete} %>
